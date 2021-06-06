@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            color: rgb(13, 88, 187);
+        }
+
+        .heading:hover{
+            color: brown;
+        }
+
+        .cards{
+            margin: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
+            grid-gap: 4rem;
+            justify-content: center;
+        }
+
+        .card{
+            overflow: hidden;
+            box-shadow: 0px 2px 20px 0px rgba(70, 69, 69, 0.3) ;
+            border-radius: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: transform 200ms ease-in;
+        }
+
+        .card__image{
+            height: 12rem;
+            width: 100%;
+            object-fit: contain;
+        }
+        .card__title{
+            padding: 1rem;
+        }
+
+        .card__description{
+            padding: 0 1rem;
+        }
+
+        .card__btn{
+            padding: 1rem;
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 1rem;
+            border: 4px solid rgb(114, 48, 48);
+            background: transparent;
+            color: rgb(24, 119, 111);
+            border-radius: 10px;
+            transition: background 200ms ease-in,
+            color 200ms ease-in    
+        }
+
+        .card:hover{
+            transform: scale(1.04);
+        }
+        
+        .card:hover .card__btn{
+            background: rgb(63, 55, 55);
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="heading">
+        <h1>CARDS TUTORIAL</h1>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-body">
+                <img src="./laptop-camera.jpg" alt="" class="card__image">
+                <h2 class="card__title">Laptop</h2>
+                <p class="card__description"> This is the picture of laptop from amazon website</p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="./one-plus-8.jpg" alt="" class="card__image">
+                <h2 class="card__title">ONE PLUS</h2>
+                <p class="card__description"> This is the picture of phone from amazon website</p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="./cycle-green.jpg" alt="" class="card__image">
+                <h2 class="card__title">Bicycle</h2>
+                <p class="card__description"> This is the picture of bicycle from amazon website</p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="./mi-tv.jpg" alt="" class="card__image">
+                <h2 class="card__title">  Mi tv</h2>
+                <p class="card__description">This is the picture of MI tv from amazon website </p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="./lg-monitor.jpg" alt="" class="card__image">
+                <h2 class="card__title">MONITOR</h2>
+                <p class="card__description"> This is the picture of monitor from amazon website</p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="./mi-tv.jpg" alt="" class="card__image">
+                <h2 class="card__title"> Mi tv</h2>
+                <p class="card__description">This is the picture of MI tv from amazon website </p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="./one-plus-8.jpg" alt="" class="card__image">
+                <h2 class="card__title">ONE PLUS</h2>
+                <p class="card__description"> This is the picture of phone from amazon website</p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="./cycle-green.jpg" alt="" class="card__image">
+                <h2 class="card__title">Bicycle</h2>
+                <p class="card__description"> This is the picture of bicycle from amazon website</p>
+            </div>
+            <button class="card__btn"> Check--Now </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
